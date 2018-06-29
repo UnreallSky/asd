@@ -22,6 +22,14 @@
 <button onclick="c()">開始</button>
 
  <p id="dice3"></p>
+ 
+ <p>機率判定</p>
+ 機率:<br>
+<input type="text"id="box2"><br>
+<button onclick="d()">開始</button>
+
+ <p id="dice4"></p>
+ 
 
 
 
@@ -48,6 +56,21 @@ function c() {
     document.getElementById("dice3").innerHTML = y;
     
     
+}
+</script>
+
+<script>
+function d() {
+    x= document.getElementById("box2").value;
+    var y = Math.floor((Math.random() * 100) + 1);
+   
+    if(y<x)
+    {document.getElementById("dice4").innerHTML = "失敗";}
+   if
+    (y>x){document.getElementById("dice4").innerHTML = "成
+    功";}
+    
+     
 }
 </script>
 
